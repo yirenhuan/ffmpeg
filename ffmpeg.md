@@ -2,7 +2,7 @@
 ffmpeg官网：官网，我下载的是最新版本，3.2.4
 
 tar -xjf ffmpeg-3.2.4.tar.bz2  //解压命令
-1
+
 2.安装依赖库
 sudo apt-get install libx264-dev  //这个比较关键，因为在编码的时候依赖这个库
 1. sudo apt-get install libfaac-dev
@@ -41,11 +41,11 @@ bin，lib,include
 文件中包含一句话：
 
 /usr/local/ffmpeg/lib
-1
+
 然后运行：
 
 sudo ldconfig   //更新ld.so.cache，使修改生效
-1
+
 为了在任何地方都可以直接用ffmpeg运行，不用使用./ffmpeg 
 ，可以将可执行程序复制到bin目录下
 
@@ -74,7 +74,3 @@ ffmpeg -i inputfile.avi -f mp4　-acodec libfaac -vcodec libx264 outputfile.mp4
 
 ffmpeg -i input.avi -s 1280*720 output.avi
 --------------------- 
-作者：shitangdejiaozi 
-来源：CSDN 
-原文：https://blog.csdn.net/shitangdejiaozi/article/details/59110384 
-版权声明：本文为博主原创文章，转载请附上博文链接！
